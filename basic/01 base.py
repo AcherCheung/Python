@@ -192,14 +192,14 @@ Author: 骆昊
 
 import os
 
-if not os.path.exists('a'):
-    os.mkdir('a')
-if not os.path.exists('a/test.txt'):
-    f = open('a/test.txt', 'w')
+if not os.path.exists('../a'):
+    os.mkdir('../a')
+if not os.path.exists('../a/test.txt'):
+    f = open('../a/test.txt', 'w')
     f.write('helle,world!')
     f.close()
 
-with open('a/test.txt', 'r') as test:
+with open('../a/test.txt', 'r') as test:
     lines = test.readlines()
     for txt in lines:
         print(txt)
